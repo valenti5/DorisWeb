@@ -1,0 +1,133 @@
+/*===============Propiedades Globales================*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+body {
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+    background: url(../img/dopoW.png);
+}
+/*===================MENU==========================*/
+ #menu a, button{
+     font-size: 18px !important;
+     font-weight: 600;
+ }
+ #menu a{
+     color:#3f3f3f;
+ }
+/*===================SLIDER DE IMAGENES==========================*/
+.carousel-inner {
+    max-height:39rem !important;
+}
+/*===================SECCION NUESTRO EQUIPO IMAGEN==========================*/
+#img-equipo{
+    max-height:30rem !important;
+    width:60%;
+}
+/*===================SECCION NUESTRO EQUIPO MAPA==========================*/
+#lince{
+    color: rgb(28, 2, 255);
+}
+
+@media (max-width:992px){/*Wmax992px, antes img-mapa será de 100% */
+    #map{
+        width: 100%;
+        height: auto;
+    }
+}
+/*=========================CONTACTOS BACKGROUND================================*/
+#bg-contactos{
+    position:relative;
+    top: -60px;
+} 
+#seccion-contacto{
+    background-color: #1b2a4e;
+    min-height:700px;
+    position:relative;
+}
+/*=========================CONTACTOS FORMULARIO================================*/
+#contenedor-formulario{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: #fbfafa;
+    border-radius:5px;
+}
+#titulo-formulario {
+    color: #3f3f3f;
+}
+/*=========================FOOTER================================*/
+footer {
+    background: #1b2a4e;
+    min-height: 100px;;
+}
+footer p{
+    color:#f3f3f3;
+    text-align:center;
+}
+#iconos  i {
+    font-size: 26px;
+    padding: 0 8px;
+    color:#f3f3f3;
+}
+/*=========================MEDIA QUERIES PANTALLA ANCHA================================*/
+@media (max-width:1200px){
+    #intro, #equipo {
+        width:90% !important;
+        margin:auto;
+    }
+    #local {
+        flex-wrap: wrap;
+        padding-top:30px;
+   }
+}
+/*=========================MEDIA QUERIES PANTALLA SM================================*/
+@media (max-width:768px) {
+    #intro, #equipo{
+        width:90% !important;
+        margin:auto;
+    }
+    #logo{
+        width: 90px;
+    }
+    #img-equipo{/* Doris */
+        max-height:20rem !important;
+        width:90%;
+    }
+    #map {
+        width: 180%;/*p´q´ DoPo en mapa se vea mas grande */  
+        height: auto;
+    }
+    #local {
+        flex-wrap: wrap;
+    }
+    #bg-contactos{
+        top: -120px;
+    }
+}
+/*=========================MEDIA QUERIES PANTALLA EXTRA-SM================================*/
+@media (max-width: 576px){
+    #servicios-fila-2 {
+        width:100% !important;
+    }
+    #servicios-fila-1 {
+        width:100% !important;
+    }
+}
+/* whatsapp */
+.whatsapp {
+    position:fixed;
+    width:60px;
+    height:60px;
+    bottom:40px;
+    right:40px;
+    background-color:#25d366;
+    color:#FFF;
+    border-radius:50px;
+    text-align:center;
+    font-size:30px;
+    z-index:100;
+  }
+  
+  .whatsapp-icon {
+    margin-top:13px;
+  }
